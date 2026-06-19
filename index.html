@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Masala Station | Coming Soon</title>
+    <meta
+      name="description"
+      content="Masala Station is coming soon."
+    >
+    <meta name="theme-color" content="#140704">
+    <style>
+      :root {
+        --cream: #fff4df;
+        --gold: #f6b84a;
+        --saffron: #dc5d22;
+        --ruby: #7e1f2a;
+        --ink: #140704;
+        --smoke: rgba(255, 244, 223, 0.74);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        height: 100vh;
+        height: 100dvh;
+        overflow: hidden;
+        color: var(--cream);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 19% 18%, rgba(246, 184, 74, 0.48), transparent 29rem),
+          radial-gradient(circle at 84% 78%, rgba(220, 93, 34, 0.56), transparent 33rem),
+          linear-gradient(135deg, #140704 0%, #39100b 36%, #7e1f2a 72%, #c64f1f 100%);
+      }
+
+      body::before,
+      body::after {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        content: "";
+      }
+
+      body::before {
+        opacity: 0.28;
+        background-image:
+          linear-gradient(rgba(255, 244, 223, 0.12) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 244, 223, 0.12) 1px, transparent 1px);
+        background-size: 72px 72px;
+        mask-image: radial-gradient(circle at center, black, transparent 76%);
+      }
+
+      body::after {
+        background:
+          linear-gradient(90deg, rgba(20, 7, 4, 0.72), transparent 36%, rgba(20, 7, 4, 0.34)),
+          linear-gradient(180deg, rgba(20, 7, 4, 0.5), transparent 42%, rgba(20, 7, 4, 0.68));
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        height: 100%;
+        padding: clamp(22px, 4vw, 56px);
+        place-items: center;
+      }
+
+      .shell {
+        width: min(100%, 1020px);
+        text-align: center;
+      }
+
+      .mark {
+        display: inline-grid;
+        width: clamp(72px, 10vw, 112px);
+        aspect-ratio: 1;
+        margin-bottom: clamp(26px, 4vw, 42px);
+        place-items: center;
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(30px, 4.4vw, 50px);
+        font-weight: 700;
+        letter-spacing: 0;
+        border: 1px solid rgba(255, 244, 223, 0.62);
+        border-radius: 999px;
+        background:
+          linear-gradient(145deg, #fff1c8 0%, var(--gold) 45%, #cb4b1e 100%);
+        box-shadow:
+          0 30px 80px rgba(20, 7, 4, 0.34),
+          inset 0 2px 9px rgba(255, 255, 255, 0.52);
+      }
+
+      .eyebrow {
+        margin: 0 0 clamp(16px, 2vw, 24px);
+        color: var(--smoke);
+        font-size: clamp(12px, 1.6vw, 14px);
+        font-weight: 700;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 12ch;
+        margin: 0 auto;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(52px, 11vw, 138px);
+        font-weight: 700;
+        line-height: 0.9;
+        letter-spacing: 0;
+        text-wrap: balance;
+        text-shadow: 0 18px 46px rgba(20, 7, 4, 0.48);
+      }
+
+      .soon {
+        display: block;
+        margin-top: clamp(18px, 2.6vw, 30px);
+        color: var(--cream);
+        font-size: clamp(22px, 4vw, 48px);
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        line-height: 1.08;
+        text-transform: uppercase;
+      }
+
+      .line {
+        width: min(280px, 48vw);
+        height: 1px;
+        margin: clamp(26px, 4vw, 40px) auto 0;
+        background: linear-gradient(90deg, transparent, rgba(255, 244, 223, 0.9), transparent);
+      }
+
+      .domain {
+        margin: clamp(22px, 3vw, 34px) 0 0;
+        color: rgba(255, 244, 223, 0.78);
+        font-size: clamp(14px, 1.8vw, 18px);
+        font-weight: 600;
+      }
+
+      @media (max-width: 560px) {
+        main {
+          padding: 24px;
+        }
+
+        .eyebrow {
+          letter-spacing: 0.2em;
+        }
+
+        h1 {
+          max-width: 9ch;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main aria-label="Masala Station coming soon">
+      <section class="shell">
+        <div class="mark" aria-hidden="true">MS</div>
+        <p class="eyebrow">Opening Soon</p>
+        <h1>Masala Station</h1>
+        <strong class="soon">Coming Soon</strong>
+        <div class="line" aria-hidden="true"></div>
+        <p class="domain">masalastation.co.nz</p>
+      </section>
+    </main>
+  </body>
+</html>
